@@ -1,0 +1,10 @@
+_delay: CODE, 944 0 44
+_ISR: CODE, 8 0 748
+_main: CODE, 24 0 492
+__initialization: CODE, 988 0 12
+_USARTDataAvailable: CODE, 756 0 68
+_USARTFlushBuffer: CODE, 1010 0 18
+_USARTHandleRxInt: CODE, 516 0 122
+_USARTInit: CODE, 824 0 60
+_USARTReadData: CODE, 884 0 60
+Total: 1624

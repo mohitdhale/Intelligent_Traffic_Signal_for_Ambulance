@@ -1,0 +1,17 @@
+_delay: CODE, 2592 0 44
+_LcdClear: CODE, 2896 0 14
+__stringdata: SMALLCONST, 1537 0 96
+_ISR: CODE, 8 0 2462
+_LcdCmd: CODE, 2758 0 40
+_LcdLine: CODE, 2636 0 42
+_LcdLineXY: CODE, 2798 0 34
+_main: CODE, 1634 0 596
+_Normal: CODE, 2470 0 62
+_LcdInit: CODE, 2718 0 40
+_LcdData: CODE, 2678 0 40
+__initialization: CODE, 2860 0 12
+_GotoXY: CODE, 2832 0 28
+_USARTWriteChar: CODE, 2882 0 14
+_USARTHandleRxInt: CODE, 2230 0 122
+_USARTInit: CODE, 2532 0 60
+Total: 3706

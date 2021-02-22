@@ -1,0 +1,562 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+end_init CODE 0 14 14 4 1
+reset_vec CODE 0 0 0 4 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\FTx.X.production.obj
+intcode CODE 0 8 8 C 1
+smallconst SMALLCONST 0 600 600 62 1
+text13 CODE 0 8B6 8B6 7A 1
+intcode_body CODE 0 930 930 76 1
+text11 CODE 0 A20 A20 2C 1
+text10 CODE 0 AC6 AC6 28 1
+text9 CODE 0 A9E A9E 28 1
+text8 CODE 0 B50 B50 E 1
+text7 CODE 0 B10 B10 1C 1
+text6 CODE 0 A76 A76 28 1
+text5 CODE 0 A4C A4C 2A 1
+text4 CODE 0 AEE AEE 22 1
+text3 CODE 0 9A6 9A6 3E 1
+text2 CODE 0 9E4 9E4 3C 1
+text1 CODE 0 B42 B42 E 1
+text0 CODE 0 662 662 254 1
+cstackCOMRAM COMRAM 1 43 43 2A 1
+bssCOMRAM COMRAM 1 1 1 42 1
+cinit CODE 0 B2C B2C 16 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 000080-0000FF 1
+BANK1 000100-0001FF 1
+BANK2 000200-0002FF 1
+BANK3 000300-0003FF 1
+BANK4 000400-0004FF 1
+BANK5 000500-0005FF 1
+BIGRAM 00006D-0005FF 1
+CODE 000004-000007 1
+CODE 000018-0005FF 1
+CODE 000B5E-007FFF 1
+COMRAM 00006D-00007F 1
+CONST 000004-000007 1
+CONST 000018-0005FF 1
+CONST 000B5E-007FFF 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 000B5E-007FFF 1
+RAM 000080-0005FF 1
+SFR 000F80-000FFF 1
+SMALLCONST 000B5E-007FFF 1
+STACK 000080-0005FF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\FTx.X.production.obj
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":31 8 intcode CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":66 8 intcode CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":16 662 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":18 662 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":20 682 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":21 684 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":22 686 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":23 688 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":24 68A text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":25 68E text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":26 692 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":27 6AE text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":28 6CA text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":29 6D6 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":30 6DA text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":33 6E6 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":35 6EA text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":37 702 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":38 708 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":39 70E text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":40 714 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":41 71C text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":35 722 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":43 728 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":44 72C text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":45 748 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":46 754 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":47 758 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":48 75A text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":50 75E text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":52 776 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":53 77C text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":54 782 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":55 788 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":56 790 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":50 796 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":58 79C text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":59 7A0 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":60 7BC text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":61 7C8 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":62 7CC text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":63 7CE text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":65 7D2 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":67 7EA text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":68 7F0 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":69 7F6 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":70 7FC text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":71 804 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":65 80A text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":73 810 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":74 814 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":75 830 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":76 83C text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":77 840 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":78 842 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":80 846 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":82 85E text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":83 864 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":84 86A text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":85 870 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":86 878 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":80 87E text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":88 884 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":89 888 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":90 8A4 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":91 8B0 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":95 8B6 text0 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":60 8B6 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":63 8B6 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":65 8BA text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":68 8F2 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":69 8F4 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":71 900 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":72 908 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":74 90E text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":75 910 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":76 924 text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":77 92E text13 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":31 930 intcode_body CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":33 962 intcode_body CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":34 968 intcode_body CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":37 96C intcode_body CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":96 9A6 text3 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":98 9A6 text3 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":99 9AA text3 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":100 9C6 text3 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\FTx.c":101 9E2 text3 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":4 9E4 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":7 9E4 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":9 9E8 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":12 9EA text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":13 9EE text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":9 9F0 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":15 A08 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":17 A08 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":18 A0A text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":19 A0C text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":20 A0E text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":22 A10 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":23 A12 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":24 A14 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":25 A16 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":27 A18 text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":28 A1A text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":29 A1C text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":30 A1E text2 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":61 A20 text11 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":64 A20 text11 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":65 A2A text11 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":64 A3A text11 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":66 A48 text11 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":64 A4A text11 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":50 A4C text5 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":52 A4C text5 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":66 A4C text11 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":53 A4E text5 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":52 A62 text5 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":55 A72 text5 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":52 A74 text5 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":34 A76 text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":55 A76 text5 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":36 A7A text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":37 A86 text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":38 A8A text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":39 A8C text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":40 A8E text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":41 A9A text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":42 A9C text6 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":9 A9E text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":11 A9E text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":12 AA2 text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":13 AA4 text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":14 AA6 text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":15 AAC text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":16 AB2 text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":17 AB8 text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":18 ABE text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":19 AC4 text9 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":25 AC6 text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":27 ACA text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":28 AD6 text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":29 ADA text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":30 ADC text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":31 ADE text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":32 AEA text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":33 AEC text10 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":56 AEE text4 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":58 AEE text4 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":59 B02 text4 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":60 B0E text4 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":43 B10 text7 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":45 B10 text7 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":46 B18 text7 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":48 B22 text7 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":49 B2A text7 CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1165 B2C cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1167 B2C cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1170 B2C cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1187 B2C cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1188 B30 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1189 B32 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1190 B32 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1191 B34 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1192 B36 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1198 B38 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1199 B38 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1200 B38 cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1201 B3A cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1202 B3C cinit CODE
+"C:\Users\MoHiT\AppData\Local\Temp\stg.":1203 B3E cinit CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":38 B42 text1 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":40 B46 text1 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":41 B4A text1 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\USART.c":42 B4E text1 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":20 B50 text8 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":22 B50 text8 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":23 B56 text8 CODE
+"C:\Users\MoHiT\Desktop\klo\FTx.X\lcd.c":24 B5C text8 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_GotoXY 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+LcdData@l 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__S1 6D 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_ISR 8 0 CODE 0 intcode dist/default/production\FTx.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\FTx.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\FTx.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_RCIE 7CED 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_PEIE 7F96 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_RCIF 7CF5 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_main 662 0 CODE 0 text0 dist/default/production\FTx.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+start 14 0 CODE 0 init C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+_RCREG FAE 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_SPBRG FAF 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\FTx.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\FTx.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__end_of_delay A4C 0 CODE 0 text11 dist/default/production\FTx.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\FTx.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\FTx.X.production.obj
+main@i 6B 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__end_of_LcdClear B5E 0 CODE 0 text8 dist/default/production\FTx.X.production.obj
+_UQEnd 41 0 COMRAM 1 bssCOMRAM dist/default/production\FTx.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\FTx.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\FTx.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/default/production\FTx.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/default/production\FTx.X.production.obj
+_LcdClear B50 0 CODE 0 text8 dist/default/production\FTx.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\FTx.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\FTx.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\FTx.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\FTx.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\FTx.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\FTx.X.production.obj
+__end_of__stringdata 661 0 SMALLCONST 0 smallconst dist/default/production\FTx.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\FTx.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\FTx.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\FTx.X.production.obj
+_delay A20 0 CODE 0 text11 dist/default/production\FTx.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\FTx.X.production.obj
+__end_of_ISR 9A6 0 CODE 0 intcode_body dist/default/production\FTx.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\FTx.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\FTx.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\FTx.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\FTx.X.production.obj
+main@BD 6A 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\FTx.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\FTx.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\FTx.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\FTx.X.production.obj
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\FTx.X.production.obj
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\FTx.X.production.obj
+main@FD 67 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\FTx.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\FTx.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\FTx.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\FTx.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\FTx.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\FTx.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\FTx.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\FTx.X.production.obj
+main@LD 69 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__Hintcode 14 0 CODE 0 intcode dist/default/production\FTx.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\FTx.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\FTx.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\FTx.X.production.obj
+main@RD 68 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\FTx.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\FTx.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\FTx.X.production.obj
+__end_of_LcdCmd AEE 0 CODE 0 text10 dist/default/production\FTx.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\FTx.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\FTx.X.production.obj
+__size_of_delay 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__end_of_LcdLine A76 0 CODE 0 text5 dist/default/production\FTx.X.production.obj
+__end_of_LcdLineXY B10 0 CODE 0 text4 dist/default/production\FTx.X.production.obj
+_USARTWriteChar B42 0 CODE 0 text1 dist/default/production\FTx.X.production.obj
+USARTWriteChar@ch 56 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+delay@d 56 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+_GotoXY B10 0 CODE 0 text7 dist/default/production\FTx.X.production.obj
+LcdLineXY@x 60 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+delay@i 59 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+_LcdCmd AC6 0 CODE 0 text10 dist/default/production\FTx.X.production.obj
+__size_of_LcdInit 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_URBuff 1 0 COMRAM 1 bssCOMRAM dist/default/production\FTx.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\FTx.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\FTx.X.production.obj
+LcdLineXY@y 62 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+stackhi 5FF 0 ABS 0 - C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+_USARTHandleRxInt 8B6 0 CODE 0 text13 dist/default/production\FTx.X.production.obj
+_Normal 9A6 0 CODE 0 text3 dist/default/production\FTx.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production\FTx.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\FTx.X.production.obj
+stacklo 80 0 ABS 0 - C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\FTx.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\FTx.X.production.obj
+__Hinit 14 0 CODE 0 init dist/default/production\FTx.X.production.obj
+__Linit 14 0 CODE 0 init dist/default/production\FTx.X.production.obj
+__Hintcodelo 14 0 CODE 0 intcodelo dist/default/production\FTx.X.production.obj
+__Lintcodelo 14 0 CODE 0 intcodelo dist/default/production\FTx.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\FTx.X.production.obj
+__end_of_main 8B6 0 CODE 0 text0 dist/default/production\FTx.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\FTx.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\FTx.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\FTx.X.production.obj
+__CFG_OSC$HS 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_USARTInit 9E4 0 CODE 0 text2 dist/default/production\FTx.X.production.obj
+end_of_initialization B38 0 CODE 0 cinit dist/default/production\FTx.X.production.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__size_of_USARTInit 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_TRISCbits F94 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_TRISDbits F95 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_TXSTAbits FAC 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_PORTDbits F83 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\FTx.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\FTx.X.production.obj
+__end_of_Normal 9E4 0 CODE 0 text3 dist/default/production\FTx.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\FTx.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\FTx.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\FTx.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\FTx.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\FTx.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\FTx.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\FTx.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\FTx.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\FTx.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\FTx.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\FTx.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\FTx.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\FTx.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\FTx.X.production.obj
+__Hpowerup 14 0 CODE 0 powerup dist/default/production\FTx.X.production.obj
+__Lpowerup 14 0 CODE 0 powerup dist/default/production\FTx.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\FTx.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\FTx.X.production.obj
+__end_of_LcdInit AC6 0 CODE 0 text9 dist/default/production\FTx.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\FTx.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\FTx.X.production.obj
+__ptext0 662 0 CODE 0 text0 dist/default/production\FTx.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\FTx.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\FTx.X.production.obj
+__ptext1 B42 0 CODE 0 text1 dist/default/production\FTx.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\FTx.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\FTx.X.production.obj
+__ptext2 9E4 0 CODE 0 text2 dist/default/production\FTx.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\FTx.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\FTx.X.production.obj
+__ptext3 9A6 0 CODE 0 text3 dist/default/production\FTx.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\FTx.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\FTx.X.production.obj
+__ptext4 AEE 0 CODE 0 text4 dist/default/production\FTx.X.production.obj
+__size_of_LcdCmd 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\FTx.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\FTx.X.production.obj
+__ptext5 A4C 0 CODE 0 text5 dist/default/production\FTx.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\FTx.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\FTx.X.production.obj
+__ptext6 A76 0 CODE 0 text6 dist/default/production\FTx.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\FTx.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\FTx.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\FTx.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\FTx.X.production.obj
+__ptext7 B10 0 CODE 0 text7 dist/default/production\FTx.X.production.obj
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\FTx.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\FTx.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\FTx.X.production.obj
+__ptext8 B50 0 CODE 0 text8 dist/default/production\FTx.X.production.obj
+__ptext9 A9E 0 CODE 0 text9 dist/default/production\FTx.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\FTx.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\FTx.X.production.obj
+__end_of_LcdData A9E 0 CODE 0 text6 dist/default/production\FTx.X.production.obj
+LcdLine@msg 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__end_of__initialization B38 0 CODE 0 cinit dist/default/production\FTx.X.production.obj
+__end_of_GotoXY B2C 0 CODE 0 text7 dist/default/production\FTx.X.production.obj
+__size_of_LcdData 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__size_of_LcdLine 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+LcdCmd@k 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+USARTInit@baud_rate 56 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+USARTHandleRxInt@data 47 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__size_of_LcdLineXY 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+GotoXY@x 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+_LcdData A76 0 CODE 0 text6 dist/default/production\FTx.X.production.obj
+GotoXY@y 5E 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__size_of_USARTWriteChar 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\FTx.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\FTx.X.production.obj
+_LcdLine A4C 0 CODE 0 text5 dist/default/production\FTx.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\FTx.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\FTx.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\FTx.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\FTx.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\FTx.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\FTx.X.production.obj
+int_func 930 0 CODE 0 intcode_body dist/default/production\FTx.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/default/production\FTx.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/default/production\FTx.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__pcstackCOMRAM 43 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__Hsmallconst 662 0 SMALLCONST 0 smallconst dist/default/production\FTx.X.production.obj
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\FTx.X.production.obj
+_LcdInit A9E 0 CODE 0 text9 dist/default/production\FTx.X.production.obj
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\FTx.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\FTx.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\FTx.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\FTx.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\FTx.X.production.obj
+__pcinit B2C 0 CODE 0 cinit dist/default/production\FTx.X.production.obj
+__ramtop 600 0 RAM 0 ramtop C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+_UQFront 42 0 COMRAM 1 bssCOMRAM dist/default/production\FTx.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production\FTx.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production\FTx.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\FTx.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\FTx.X.production.obj
+__end_of_USARTWriteChar B50 0 CODE 0 text1 dist/default/production\FTx.X.production.obj
+__ptext10 AC6 0 CODE 0 text10 dist/default/production\FTx.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\FTx.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\FTx.X.production.obj
+__ptext11 A20 0 CODE 0 text11 dist/default/production\FTx.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\FTx.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\FTx.X.production.obj
+__ptext13 8B6 0 CODE 0 text13 dist/default/production\FTx.X.production.obj
+__end_of_USARTHandleRxInt 930 0 CODE 0 text13 dist/default/production\FTx.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Hend_init 18 0 CODE 0 end_init dist/default/production\FTx.X.production.obj
+__Lend_init 14 0 CODE 0 end_init dist/default/production\FTx.X.production.obj
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+__size_of_LcdClear 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\FTx.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\FTx.X.production.obj
+__size_of_Normal 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__stringdata 601 0 SMALLCONST 0 smallconst dist/default/production\FTx.X.production.obj
+__accesstop 80 0 ABS 0 - C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+LcdLineXY@msg 64 0 COMRAM 1 cstackCOMRAM dist/default/production\FTx.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\FTx.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\FTx.X.production.obj
+__pintcode_body 930 0 CODE 0 intcode_body dist/default/production\FTx.X.production.obj
+intlevel0 0 0 CODE 0 text C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+intlevel1 0 0 CODE 0 text C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+intlevel2 0 0 CODE 0 text C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+intlevel3 0 0 CODE 0 text C:\Users\MoHiT\AppData\Local\Temp\stg.obj
+__end_of_USARTInit A20 0 CODE 0 text2 dist/default/production\FTx.X.production.obj
+start_initialization B2C 0 CODE 0 cinit dist/default/production\FTx.X.production.obj
+__initialization B2C 0 CODE 0 cinit dist/default/production\FTx.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\FTx.X.production.obj
+_LcdLineXY AEE 0 CODE 0 text4 dist/default/production\FTx.X.production.obj
+__size_of_USARTHandleRxInt 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\FTx.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1
+intcode 0 8 8 10 1
+smallconst 0 600 600 62 1
+config 0 300000 300000 E 1
+idloc 0 200000 200000 8 1
+bssCOMRAM 1 1 1 6C 1
+text0 0 662 662 4FC 1
